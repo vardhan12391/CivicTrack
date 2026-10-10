@@ -1,3 +1,4 @@
+const dns = require('dns');
 const mongoose = require('mongoose');
 const env = require('./env');
 
@@ -10,10 +11,18 @@ mongoose.set('strictQuery', true);
 async function connectDB(retries = 5, delayMs = 2000) {
   for (let attempt = 1; attempt <= retries; attempt += 1) {
     try {
-      await mongoose.connect(env.mongoUri, { serverSelectionTimeoutMS: 5000 });
+      await mongoose.connect(env.mongoUri, {
+        serverSelectionTimeoutMS: 8000,
+        dbName: 'civictrack',
+      });
       console.log(`[db] connected to ${maskUri(env.mongoUri)}`);
       return mongoose.connection;
     } catch (err) {
+      if (err.message && err.message.includes('querySrv') && attempt === 1) {
+        try {
+          dns.setServers(['8.8.8.8', '1.1.1.1']);
+        } catch { /* ignore */ }
+      }
       console.error(`[db] connection attempt ${attempt}/${retries} failed: ${err.message}`);
       if (attempt === retries) throw err;
       await new Promise((r) => setTimeout(r, delayMs));
