@@ -18,9 +18,9 @@ A MERN-stack civic-technology application that gives the public a transparent vi
 - **Backend health check:** [https://civictrack-edf6.onrender.com/api/health](https://civictrack-edf6.onrender.com/api/health)
 
 > **Demo note:** The project uses fictional demonstration data. The backend may take a little time to wake up if the hosting service has been idle.
-## 🎥 Project Demo
+## 🎥 Project video 
 
-[▶️ Watch the CivicTrack Hackathon Demo Video](https://github.com/vardhan12391/CivicTrack/blob/main/hackathon%20video.mp4)
+[▶️ Watch the CivicTrack Hackathon  Video](https://github.com/vardhan12391/CivicTrack/blob/main/hackathon%20video.mp4)
 
 ## 1. Problem statement
 
