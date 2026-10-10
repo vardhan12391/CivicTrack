@@ -1,20 +1,10 @@
-**# CivicTrack — Smart Public Works Transparency & Coordination Platform**
+# CivicTrack — Smart Public Works Transparency & Coordination Platform
 
 
 
-> A MERN-stack civic-technology application that gives the public one honest view of
+A MERN-stack civic-technology application that gives the public a transparent view of infrastructure projects while helping departments coordinate roadwork through **RoadSync** — a deterministic engine that identifies potential conflicts before two departments dig up the same road.
 
-> infrastructure projects while giving departments **RoadSync** — a deterministic engine
-
-> that warns two departments **before** they dig up the same road twice.
-
->
-
-> ⚠️ **Demonstration project.** Every project, department, person, report and coordinate in
-
-> this application is fictional data created for a hackathon demo. CivicTrack is not
-
-> connected to any real government system.
+> ⚠️ **Demonstration project:** All projects, departments, people, reports, and coordinates in this application use fictional data created for a hackathon demo. CivicTrack is not connected to any real government system.
 
 
 
@@ -587,7 +577,7 @@ audit-history persistence, CORS allow-list, security headers, and the seed contr
 
 1. New Web Service → point at the `server/` directory; build `npm install`; start `npm start`.
 
-2. Set environment variables: `MONGODB_URI` (Atlas), `JWT_SECRET`, `CLIENT_ORIGIN=https\://your-app.vercel.app`, `COOKIE_SECURE=true`, `NODE_ENV=production`.
+2. Set environment variables: `MONGODB_URI` (Atlas), `JWT_SECRET`, `CLIENT_ORIGIN=https://civic-track-sepia.vercel.app`, `COOKIE_SECURE=true`, `NODE_ENV=production`.
 
 3. Health check path: `/api/health`.
 
@@ -597,7 +587,7 @@ audit-history persistence, CORS allow-list, security headers, and the seed contr
 
 1. Import the repo; root directory `client`; framework preset Vite; build `npm run build`; output `dist`.
 
-2. Set `VITE_API_BASE_URL=https\://your-api.onrender.com/api`.
+2. Set `VITE_API_BASE_URL=https://civictrack-edf6.onrender.com/api`.
 
 
 
@@ -617,9 +607,7 @@ sign in as `admin\@civictrack.demo` → check dashboard counts → open RoadSync
 
 (should report 0 new) → submit a report as a citizen → verify it appears under
 
-`/official/reports`. Deployment URLs are intentionally not listed here until actually
-
-provisioned and verified.
+`/official/reports`. The live deployment links are listed at the top of this README.
 
 
 
