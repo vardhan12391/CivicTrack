@@ -22,6 +22,11 @@ A MERN-stack civic-technology application that gives the public a transparent vi
 
 [▶️ Watch the CivicTrack Hackathon  Video](https://github.com/vardhan12391/CivicTrack/blob/main/hackathon%20video.mp4)
 
+
+## 🎥 Alternative Project video 
+
+[▶️ Watch the CivicTrack Demo Video (Version 2)](https://github.com/vardhan12391/CivicTrack/blob/main/hackathon%20video%20(1).mp4)
+
 ## 1. Problem statement
 
 
